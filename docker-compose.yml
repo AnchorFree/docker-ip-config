@@ -1,0 +1,8 @@
+version: '2'
+services:
+    ipconfig:
+      cap_add:
+        - NET_ADMIN
+      image: anchorfree/ip-config:prod
+      network_mode: host
+      restart: always
